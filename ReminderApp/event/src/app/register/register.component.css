@@ -1,0 +1,46 @@
+body{
+    background-color: #f0f2f5;
+}
+.divone{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+input{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 35px;
+    line-height: 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    border-radius: 4px;
+    
+}
+h2{
+    text-align: center;
+
+}
+
+
+.divbtn{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnright{
+    display: flex;
+    justify-content: right;
+
+}
+.nav {
+    background-color: #861f41;
+}
+.red{
+    color: red;
+}

@@ -1,0 +1,24 @@
+<nav class="nav navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand title">Events</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse btnright" id="navbarSupportedContent">
+        <button class="btn btn btn-primary"  routerLink="register" style="color: white;">Register Now</button>
+        </div>
+    </div>
+</nav>
+
+<form [formGroup]="loginform" (ngSubmit)="login()">
+    <div class="divone">
+        <h1>Login</h1>
+        <input class="mt-2" type="text" placeholder="User Name" id="username" formControlName="username" name="username">
+        <input class="mt-2" type="password" placeholder="Passowrd" id="password" formControlName="password" name="password">
+    
+        <div class="divbt "><button type="submit" class=" btn-primary mt-2" >Login</button></div>
+    
+    </div>
+</form>

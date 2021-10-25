@@ -1,0 +1,27 @@
+<nav class="nav navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand title">Events</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse btnright" id="navbarSupportedContent">
+            <button class="btn btn btn-primary" routerLink="" style="color: white;">Login Now</button>
+
+        </div>
+    </div>
+</nav>
+
+
+<form [formGroup]="registerform" (ngSubmit)="register()">
+    <div class="divone">
+
+        <h2>Registration</h2>
+        <input type="text" placeholder="User Name" id="username" class="mt-1" formControlName="username" name="username">
+        <div *ngIf="(this.registerform.get('username')?.touched||this.registerform.get('uname')?.dirty)&&this.registerform.get('username')?.errors" class="red">Invalid Username</div>
+        <input type="password" placeholder="Password" name="password" id="password" class="mt-1" formControlName="password">
+        <div *ngIf="(this.registerform.get('password')?.touched||this.registerform.get('password')?.dirty)&&this.registerform.get('password')?.errors" class="red">Invalid Password Format</div>
+        <div class="divbtn "><button type="submit" class="btn-primary mt-1">Register</button></div>
+
+    </div>
+</form>
